@@ -17,7 +17,7 @@ namespace ConsoleApp1
         {
             discord = new DiscordClient(new DiscordConfiguration()
             {
-                Token = "MTA1ODAxMzc3ODMxNjM4MjIwOQ.GGGLXq.nv7dJKYR-bvmM8CU_x0MyywkqXziRR3INu_74c",
+                Token = "azertyuiopqsdfghjklmmwxcvbn",
                 TokenType = TokenType.Bot,
                 Intents = DiscordIntents.All,
             });
@@ -25,7 +25,7 @@ namespace ConsoleApp1
             var slashCommands = discord.UseSlashCommands();
             discord.UseInteractivity();
 
-            slashCommands.RegisterCommands<BlagueCommands>(1058013386186706985);
+            slashCommands.RegisterCommands<BlagueCommands>(00000000000000000000);
 
             await discord.ConnectAsync();
             await Task.Delay(-1);
